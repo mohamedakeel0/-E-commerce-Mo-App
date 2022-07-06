@@ -3,13 +3,14 @@ import 'package:flutter1/models/ChangeFavorites.dart';
 import 'package:flutter1/models/FavoritesModel.dart';
 import 'package:flutter1/models/LogoutModel.dart';
 import 'package:flutter1/models/ModelCategories.dart';
+import 'package:flutter1/models/Modelcarts.dart';
 import 'package:flutter1/models/modelLogin.dart';
 
 abstract class ShopStates{}
 class ShopInitailState extends ShopStates{}
 class ShopChangeBottomNavState extends ShopStates{}
 class ShopCurrentPageNavState extends ShopStates{}
-
+class ChangeSwitchState extends ShopStates{}
 class ShopLoadingHomeDataState extends ShopStates{}
 class ShopSuccessHomeDataState extends ShopStates{
 
@@ -79,4 +80,14 @@ class  ShoplogoutSuccesState extends ShopStates{
 class   ShoplogoutErrorState extends ShopStates{
   final String error;
   ShoplogoutErrorState(this.error);
+}
+class ShoplpostCartsLoadingState extends ShopStates{}
+class  ShoppostCartsSuccesState extends ShopStates{
+  final Modelcarts modelcarts;
+
+  ShoppostCartsSuccesState(this.modelcarts);
+}
+class   ShoppostCartsErrorState extends ShopStates{
+  final String error;
+  ShoppostCartsErrorState(this.error);
 }
