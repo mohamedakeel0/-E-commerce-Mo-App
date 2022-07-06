@@ -24,8 +24,14 @@ class ShopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<ShopCubic,ShopStates>(
       listener: (context,state){
+
+
+
+
     if (state is ShoplogoutSuccesState) {
+
     if (state.logoutModel.status!) {
+
       ShowToast(
           text: state.logoutModel.message!, state: Toaststates.SUCCESS);
       signOut(context);
@@ -36,19 +42,23 @@ class ShopLayout extends StatelessWidget {
     }
       },
       builder: (context,state){
+
         var cubic=ShopCubic.get(context);
 
-        return ConditionalBuilder(condition:cubic.ProfileModel != null && state is! ShopProfileLoadingState && cubic.homeModel!=null , builder: (context) {
+        return ConditionalBuilder(condition:cubic.ProfileModel != null &&cubic.ProfileModel!.data!=null &&state is! ShopProfileLoadingState && cubic.homeModel!=null &&cubic.homeModel!.data!.products!=null, builder: (context) {
 
           return  Scaffold(
             appBar: AppBar(
-              title: Text('E -  Mo'),centerTitle: true,
+              title: Text('E -  Mo',style: TextStyle(color: Colors.orangeAccent,
+                  fontSize:  32,
+                  fontWeight: FontWeight.w800,
+                  ),),centerTitle: true,
               actions: [IconButton(onPressed: (){
                 navigateAndFinish(context, Login());
-              }, icon: Icon(Icons.search,color: Colors.orangeAccent)),
+              }, icon: Icon(Icons.search,color: Colors.black87)),
                 Padding(
                   padding: const EdgeInsets.only(right: 12,left: 5),
-                  child: Icon(Icons.shopping_cart_outlined,color: Colors.orangeAccent,),
+                  child: Icon(Icons.shopping_cart_outlined,color: Colors.black87,),
                 ),
               ],
             ),

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:bloc/bloc.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter1/layout/cubic/states.dart';
 import 'package:flutter1/shared/bloc_observer/blocObserver.dart';
+import 'package:flutter1/shared/componnents0/components.dart';
 import 'package:flutter1/shared/cubic_to_mode/cubic.dart';
 import 'package:flutter1/shared/cubic_to_mode/states.dart';
 import 'package:flutter1/shared/network/local/cache_helper.dart';
@@ -14,6 +16,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'layout/HomeApp/HomeApp.dart';
 import 'layout/cubic/cubic.dart';
+import 'modules/Login/Shoplogin.dart';
 import 'modules/Search/login.dart';
 import 'modules/Regisiter/cubic/cubic.dart';
 import 'modules/first/firstscreen.dart';
@@ -29,7 +32,7 @@ void main()async {
   dynamic token=CacheHelper.getData(key: 'token');
   print(token);
   Widget widget;
-  if(token!=null)widget=ShopLayout();
+  if(token!=null  )widget=ShopLayout();
   else widget=First_screen();
   runApp( MyApp(startWidget: widget,));
 }
@@ -55,9 +58,10 @@ class MyApp extends StatelessWidget {
             create: (context) =>  ShopRegisterCubic()),
 
       ],
-      child: BlocConsumer<AppCubit, AppStates>(
+      child: BlocConsumer<ShopCubic, ShopStates>(
         listener: (context, state) {},
         builder: (context, state) {
+
           return MaterialApp(
             title: 'Flutter Demo',
             debugShowCheckedModeBanner: false,

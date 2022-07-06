@@ -11,6 +11,7 @@ import 'package:flutter1/models/ChangeFavorites.dart';
 import 'package:flutter1/models/FavoritesModel.dart';
 import 'package:flutter1/models/LogoutModel.dart';
 import 'package:flutter1/models/ModelCategories.dart';
+import 'package:flutter1/models/Modelcarts.dart';
 import 'package:flutter1/models/modelLogin.dart';
 
 import 'package:flutter1/modules/Categories/Categories_screen.dart';
@@ -48,6 +49,11 @@ class ShopCubic extends Cubit<ShopStates> {
     emit(ShopCurrentPageNavState());
   }
 
+  bool isSwitched = false;
+  void ChangeSwitch(bool value) {
+    isSwitched = value;
+    emit(ChangeSwitchState());
+  }
   HomeModel?homeModel;
   Map<int,bool> favorites={};
   void getDataHome(){
@@ -174,6 +180,23 @@ homeModel!.data!.products!.forEach((element) {
     });
   }
 
+  Modelcarts? modelcarts;
+  void postCarts(int product_id){
 
+    emit(ShoplpostCartsLoadingState());
+
+    DioHelper.postdata(url: CARTS, token: token,data: {
+      "product_id": product_id,
+    }).then((value) {
+
+
+      modelcarts=Modelcarts.fromJson(value.data);
+
+      emit(ShoppostCartsSuccesState(modelcarts!));
+    }).catchError((error){
+
+      emit(ShoppostCartsErrorState(error.toString()));
+    });
+  }
 
 }

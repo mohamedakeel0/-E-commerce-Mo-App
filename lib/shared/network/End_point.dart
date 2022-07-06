@@ -7,6 +7,6 @@ const REGISTER='register';
 const UPDATAPROFILE='update-profile';
 const SEARCH='products/search';
 const LOGOUT='logout';
-
+const CARTS='carts';
 
 
