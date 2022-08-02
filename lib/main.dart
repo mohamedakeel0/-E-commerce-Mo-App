@@ -2,24 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:bloc/bloc.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter1/layout/cubic/states.dart';
-import 'package:flutter1/shared/bloc_observer/blocObserver.dart';
-import 'package:flutter1/shared/componnents0/components.dart';
-import 'package:flutter1/shared/cubic_to_mode/cubic.dart';
-import 'package:flutter1/shared/cubic_to_mode/states.dart';
+import 'package:flutter1/bloc/bloc_observer/blocObserver.dart';
+import 'package:flutter1/bloc/cubic/states.dart';
+import 'package:flutter1/bloc/cubic_regisiter/cubic.dart';
+import 'package:flutter1/bloc/cubic_to_mode/cubic.dart';
+
 import 'package:flutter1/shared/network/local/cache_helper.dart';
 import 'package:flutter1/shared/network/remot/dio_helper.dart';
 import 'package:flutter1/shared/style/Theme.dart';
+import 'package:flutter1/view/HomeApp/HomeApp.dart';
+
+import 'package:flutter1/view/first/firstscreen.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'layout/HomeApp/HomeApp.dart';
-import 'layout/cubic/cubic.dart';
-import 'modules/Login/Shoplogin.dart';
-import 'modules/Search/login.dart';
-import 'modules/Regisiter/cubic/cubic.dart';
-import 'modules/first/firstscreen.dart';
+import 'bloc/cubic/cubic.dart';
+
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();

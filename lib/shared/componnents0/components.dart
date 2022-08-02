@@ -1,10 +1,11 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter1/layout/cubic/cubic.dart';
-import 'package:flutter1/modules/Products/detail_products.dart';
+import 'package:flutter1/bloc/cubic/cubic.dart';
+
 import 'package:flutter1/shared/style/colors.dart';
 import 'package:flutter1/shared/style/colors.dart';
+import 'package:flutter1/view/Products/detail_products.dart';
 
 import 'package:fluttertoast/fluttertoast.dart';
 
