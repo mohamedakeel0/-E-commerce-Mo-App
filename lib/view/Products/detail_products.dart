@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter1/bloc/HomeApp/modelHome.dart';
+
 import 'package:flutter1/bloc/cubic/cubic.dart';
 import 'package:flutter1/bloc/cubic/states.dart';
 import 'package:flutter1/shared/componnents0/components.dart';
 import 'package:flutter1/shared/style/colors.dart';
+import 'package:flutter1/view/HomeApp/modelHome.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 class detail_products extends StatelessWidget {

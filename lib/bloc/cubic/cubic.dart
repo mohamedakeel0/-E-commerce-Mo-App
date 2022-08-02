@@ -5,7 +5,7 @@ import 'package:bloc/bloc.dart';
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter1/bloc/HomeApp/modelHome.dart';
+
 import 'package:flutter1/bloc/cubic/states.dart';
 import 'package:flutter1/models/ChangeFavorites.dart';
 import 'package:flutter1/models/FavoritesModel.dart';
@@ -21,6 +21,7 @@ import 'package:flutter1/shared/network/End_point.dart';
 import 'package:flutter1/shared/network/remot/dio_helper.dart';
 import 'package:flutter1/view/Categories/Categories_screen.dart';
 import 'package:flutter1/view/Favorits/Favorits_screen.dart';
+import 'package:flutter1/view/HomeApp/modelHome.dart';
 import 'package:flutter1/view/Products/Products_Screen.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';

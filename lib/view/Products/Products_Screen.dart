@@ -1,12 +1,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter1/bloc/HomeApp/modelHome.dart';
+
 import 'package:flutter1/bloc/cubic/cubic.dart';
 import 'package:flutter1/bloc/cubic/states.dart';
 import 'package:flutter1/models/ModelCategories.dart';
 import 'package:flutter1/shared/componnents0/components.dart';
 import 'package:flutter1/shared/style/colors.dart';
+import 'package:flutter1/view/HomeApp/modelHome.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Products_Screen extends StatelessWidget {

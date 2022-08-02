@@ -3,7 +3,8 @@
 import 'package:bloc/bloc.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter1/shared/cubic_to_mode/states.dart';
+import 'package:flutter1/bloc/cubic_to_mode/states.dart';
+
 import 'package:flutter1/shared/network/local/cache_helper.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
