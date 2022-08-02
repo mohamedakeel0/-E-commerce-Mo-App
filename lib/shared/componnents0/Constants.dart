@@ -4,10 +4,11 @@
 
 
 
-import 'package:flutter1/modules/Login/Shoplogin.dart';
-import 'package:flutter1/shared/network/local/cache_helper.dart';
 
-import '../../modules/Search/login.dart';
+import 'package:flutter1/shared/network/local/cache_helper.dart';
+import 'package:flutter1/view/Login/Shoplogin.dart';
+
+
 import 'components.dart';
 
 void signOut(context){
