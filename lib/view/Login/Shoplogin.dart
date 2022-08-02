@@ -2,10 +2,12 @@ import 'package:conditional_builder_null_safety/conditional_builder_null_safety.
 import 'package:email_validator/email_validator.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter1/bloc/cubic_login/cubic.dart';
+import 'package:flutter1/bloc/cubic_login/states.dart';
 import 'package:flutter1/view/HomeApp/HomeApp.dart';
 
 import 'package:flutter1/view/Login/Shoplogin.dart';
-import 'package:flutter1/view/Login/cubic_login/states.dart';
+
 import 'package:flutter1/view/Regisiter/register.dart';
 import 'package:flutter1/shared/componnents0/Constants.dart';
 import 'package:flutter1/shared/componnents0/components.dart';
@@ -13,8 +15,6 @@ import 'package:flutter1/shared/network/local/cache_helper.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'cubic_login/cubic.dart';
-import 'cubic_login/states.dart';
 class Shoplogin extends StatelessWidget {
 @override
 Widget build(BuildContext context) {

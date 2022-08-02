@@ -4,13 +4,14 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter1/bloc/bloc_observer/blocObserver.dart';
 import 'package:flutter1/bloc/cubic/states.dart';
+import 'package:flutter1/bloc/cubic_regisiter/cubic.dart';
 import 'package:flutter1/bloc/cubic_to_mode/cubic.dart';
 
 import 'package:flutter1/shared/network/local/cache_helper.dart';
 import 'package:flutter1/shared/network/remot/dio_helper.dart';
 import 'package:flutter1/shared/style/Theme.dart';
 import 'package:flutter1/view/HomeApp/HomeApp.dart';
-import 'package:flutter1/view/Regisiter/cubic/cubic.dart';
+
 import 'package:flutter1/view/first/firstscreen.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';

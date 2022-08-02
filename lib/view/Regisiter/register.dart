@@ -1,17 +1,18 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter1/bloc/cubic_regisiter/cubic.dart';
+import 'package:flutter1/bloc/cubic_regisiter/states.dart';
 
 
 import 'package:flutter1/shared/componnents0/Constants.dart';
 import 'package:flutter1/shared/componnents0/components.dart';
 import 'package:flutter1/shared/network/local/cache_helper.dart';
 import 'package:flutter1/view/HomeApp/HomeApp.dart';
-import 'package:flutter1/view/Regisiter/cubic/cubic.dart';
+
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'cubic/states.dart';
 class shop_register extends StatelessWidget {
   const shop_register({Key? key}) : super(key: key);
 

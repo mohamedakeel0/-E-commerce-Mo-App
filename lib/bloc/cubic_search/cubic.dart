@@ -1,10 +1,11 @@
 
+import 'package:flutter1/bloc/cubic_search/states.dart';
 import 'package:flutter1/models/SearchModel.dart';
 
 import 'package:flutter1/shared/componnents0/Constants.dart';
 import 'package:flutter1/shared/network/End_point.dart';
 import 'package:flutter1/shared/network/remot/dio_helper.dart';
-import 'package:flutter1/view/Search/cubic/states.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ShopSearchCubic extends Cubit<ShopSearchStates>{

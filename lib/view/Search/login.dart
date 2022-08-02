@@ -1,12 +1,13 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter1/bloc/cubic_search/cubic.dart';
+import 'package:flutter1/bloc/cubic_search/states.dart';
 
 import 'package:flutter1/shared/componnents0/components.dart';
-import 'package:flutter1/view/Search/cubic/cubic.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'cubic/states.dart';
 
 class Login extends StatelessWidget {
   TextEditingController SearchController = TextEditingController();
